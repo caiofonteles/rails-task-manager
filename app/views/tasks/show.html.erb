@@ -1,0 +1,8 @@
+
+<h3><%= @task.title %></h3>
+<%= link_to edit_task_path(@task.id) do %>
+  <button type="button">Edit Task</button>
+<% end %>
+<p><%= @task.details %></p>
+<p><%= @task.completed ? "[x] this task is completed" : "[ ] this task is not completed" %></p>
+<%= link_to "Back to List", tasks_path %>
